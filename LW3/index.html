@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+        <title>Калькулятор квадратных уравнений</title>
+    </head>
+<body>
+    <h1>Калькулятор квадратных уравнений</h1>
+    <form>
+        <label for="a">Введите значение a:</label>
+        <input type="number" id="a" name="a"><br><br>
+        <label for="b">Введите значение b:</label>
+        <input type="number" id="b" name="b"><br><br>
+        <label for="c">Введите значение c:</label>
+        <input type="number" id="c" name="c"><br><br>
+        <button type="button" onclick="calculate()">Рассчитать</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
